@@ -1,0 +1,19 @@
+{
+  "name": "raccoon-edu",
+  "version": "1.0.0",
+  "description": "Raccoon EDU es un sistema desarrollado para la gestión del aprendizaje (LMS).",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ismael-Romero/raccoon-edu.git"
+  },
+  "author": "I. Romero, A. Patiño, L. Mariscal & J. Lizárraga.",
+  "license": "CC-BY-ND-4.0",
+  "bugs": {
+    "url": "https://github.com/Ismael-Romero/raccoon-edu/issues"
+  },
+  "homepage": "https://github.com/Ismael-Romero/raccoon-edu#readme"
+}
