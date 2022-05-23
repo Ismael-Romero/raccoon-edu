@@ -29,17 +29,14 @@ module.exports = {
             },
             {
                 test: /\.s[ac]ss$/i,
-                exclude: /node_modules/,
                 use: ['style-loader', 'sass-loader']
             },
             {
                 test: /\.css$/i,
-                exclude: /node_modules/,
                 use: ['style-loader', 'css-loader']
             },
             {
                 test: /\.less/,
-                exclude: /node_modules/,
                 use:[
                     { loader: 'style-loader' },
                     { loader: 'css-loader' },
