@@ -4,7 +4,10 @@
   "description": "Raccoon EDU es un sistema desarrollado para la gestión del aprendizaje (LMS).",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production",
+    "dev": "webpack --mode development --config webpack.config.js --watch",
+    "start": "electron ."
   },
   "repository": {
     "type": "git",
@@ -15,5 +18,28 @@
   "bugs": {
     "url": "https://github.com/Ismael-Romero/raccoon-edu/issues"
   },
-  "homepage": "https://github.com/Ismael-Romero/raccoon-edu#readme"
+  "homepage": "https://github.com/Ismael-Romero/raccoon-edu#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.0-beta1",
+    "electron": "^18.2.4",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.0",
+    "@babel/preset-env": "^7.18.0",
+    "@babel/preset-react": "^7.17.12",
+    "babel-loader": "^8.2.5",
+    "css-loader": "^6.7.1",
+    "electron-reload": "^2.0.0-alpha.1",
+    "file-loader": "^6.2.0",
+    "less-loader": "^11.0.0",
+    "sass": "^1.52.1",
+    "sass-loader": "^13.0.0",
+    "style-loader": "^3.3.1",
+    "ts-loader": "^9.3.0",
+    "typescript": "^4.6.4",
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2"
+  }
 }
