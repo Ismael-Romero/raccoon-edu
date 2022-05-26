@@ -5,8 +5,8 @@ const isDev = !app.isPackaged;
 
 function createWindow(){
     const win = new BrowserWindow({
-        width: 450,
-        height: 650,
+        width: 1080,
+        height: 760,
         minWidth: 450,
         minHeight: 600,
         autoHideMenuBar: true,
@@ -18,7 +18,7 @@ function createWindow(){
         }
     });
 
-    win.loadFile('./public/login.html');
+    win.loadFile('./public/index.html');
 
     //open the DevTools
     //win.webContents.openDevTools();
