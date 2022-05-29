@@ -14,7 +14,8 @@ function createWindow(){
             nodeIntegration: false,
             nodeIntegrationWorker: true,
             worldSafeExecuteJavaScript: true,
-            contextIsolation: true
+            contextIsolation: true,
+            webviewTag: true
         }
     });
 

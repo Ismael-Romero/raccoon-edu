@@ -143,7 +143,7 @@
           <i class="bi bi-grid"></i>
           <span>Dashboard</span>
         </a>
-      </li><!-- End Dashboard Nav -->
+      </li>
 
       <li class="nav-heading">Contenido</li>
 
@@ -152,32 +152,53 @@
           <i class="bi bi-person"></i>
           <span>Mis clases</span>
         </a>
-      </li><!-- End Profile Page Nav -->
+      </li>
 
       <li class="nav-item">
         <a class="nav-link collapsed" href="study-rooms.html">
-          <i class="bi bi-question-circle"></i>
+          <i class="bi bi-book"></i>
           <span>Salas de estudio </span>
         </a>
-      </li><!-- End F.A.Q Page Nav -->
+      </li>
 
       <li class="nav-item">
         <a class="nav-link collapsed" href="forums.html">
-          <i class="bi bi-envelope"></i>
+          <i class="bi bi-info-square"></i>
           <span>Foros de discusión </span>
         </a>
-      </li><!-- End Contact Page Nav -->
+      </li>
 
       <li class="nav-item">
         <a class="nav-link collapsed" href="registrations.html">
           <i class="bi bi-card-list"></i>
           <span>Inscripciones</span>
         </a>
-      </li><!-- End Register Page Nav -->
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="meet.html">
+          <i class="bi bi-people-fill"></i>
+          <span>Reuniones</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="task.html">
+          <i class="bi bi-box-seam"></i>
+          <span>Mis tareas</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="books.html">
+          <i class="bi bi-book"></i>
+          <span>Biblioteca </span>
+        </a>
+      </li>
+
     </ul>
 
   </aside><!-- End Sidebar-->
-
 
   <main id="main" class="main">
 
@@ -193,8 +214,51 @@
 
     <!-- COLOCAR TARJETAS DE CLASES ACTIVAS-->
     <section class="section">
-      <div class="row">
-        <div class="col-xl-12"> Hola </div>
+      <div class="row" id="myclass">
+      
+
+
+        <script>
+          const divMyClass = document.getElementById('myclass');
+          const path ="./assets/img";
+          const data = [
+            { img:`${path}/code-my-class.png`, myClass: "Ingeniería de software", teacher: "María de los Ángeles Laces Macera", task: "1 Tarea asignada" },
+            { img:`${path}/red-my-class.png`, myClass: "Redes de computadoras", teacher: "María de los Ángeles Laces Macera", task: "1 Tarea asignada" },
+            { img:`${path}/`, myClass: "Taller de sistemas operativos", teacher: "Miguel Ángel Gallarado Lemus", task: "4 Tarea asignada" },
+            { img:`${path}/`, myClass: "Administración de bases de datos", teacher: "Gustavo Viera Estrada", task: "4 Tarea asignada" },
+            { img:`${path}/`, myClass: "Taller de bases de datos", teacher: "Raúl Arzeta", task: "Sin tareas pendientes" },
+            { img:`${path}/`, myClass: "Lenguajes y automatas", teacher: "Romel Hernández Rosales", task: "Sin tareas pendientes" },
+            { img:`${path}/`, myClass: "Lenguaje interfaz", teacher: "Martín Villalobos", task: "1 Tarea asignada" },
+
+          ];
+
+          for(let step of data){
+            divMyClass.innerHTML += `
+            <div class="col-xl-6"> 
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img class="img-fluid rounded-start" src="${step.img}" alt="">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title"> ${step.myClass} </h5>
+                    <p class="card-text"> Docente: ${step.teacher} </p>
+                    <p class="card-text"><small class="text-muted"> ${step.task} | <a class="link" href="task.html"> ver mis tareas</a> </small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          `;;
+          }
+          
+        </script>
+
+
+
+
+        </script>    
       </div>
     </section>
 
