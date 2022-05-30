@@ -7,6 +7,7 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
 
+
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
   <link href="https://fonts.gstatic.com" rel="preconnect">
@@ -212,15 +213,153 @@
       </nav>
     </div>
 
+
+    <script>
+
+    </script>
     <!-- COLOCAR TARJETAS DE VIDEO y/O Libros-->
     <section class="section">
-      <div class="row">
-        <div class="col-xl-12"> Hola </div>
+      <div id="cartaEstilo" class="card" style="box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px; border-radius: 10px ; width: 18rem; border-radius: 20px; position: relative; top: 40px;">
+        <br>
+        <input id=idBtnLibre type="button" value="Libre~" style=" font-size: 12px ;width: 60px; height: 25px; position: relative; left: 25px; top: 20px; border-radius: 10px; border: 0px;">
+        <input type="button" value="Compacto" style="font-size: 10px ;width: 60px; height: 25px; position: relative; left: 110px; bottom: 5px; border-radius: 10px; border: 0px;">
+        <input type="button" value="Descubrelo" style="font-size: 9px ;width: 60px; height: 25px; position: relative; left: 195px; bottom: 30px; border-radius: 10px; border: 0px;">
+        <img style="width: 282px; height: 220px; border-radius: 5px;" src="https://pm1.narvii.com/6521/03d3f138764296fc12df4446e2038f37172527db_hq.jpg" alt="">
+        <div class="card-body">
+          <h5 class="card-title">¡Elige tú estilo!</h5>
+          <p class="card-text">Escoge, escribe y sube.</p>
+          <a style="position: relative; left: 82px;" href="#" class="btn btn-primary">Aceptar</a>
+        </div>
       </div>
     </section>
+    
+    <script>
+      let cambiarBoton = function(icon){
+        
+        icon.classList.toggle('bi-mic-mute')
+        
+      }
+
+      
+    </script>
+
+    <!--TABLA DE CUARTOS DE ESTUDIO ABIERTOS-->
+    <div id="cardEstudios" class="card" style=" box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px; width: 50rem; border-radius: 20px; position: relative; bottom: 513px; left: 350px;">
+      <label style="text-align: center; position: relative; top: 20px;">¡Unete a una sala de estudio!</label>
+      
+      
+      <hr style="position: relative; top: 15px ;">
+        <div class="card-body">
+
+        <img style="position: relative; top: 2px; width: 5%; border-radius: 50px ;" src="https://lh3.googleusercontent.com/a-/AOh14GjcO9Ug3St_2I__PCa2mFdu0-_7b5-0Fz0pZm275A=s75-c" alt="">
+        <img style=" position: relative; top: 2px; ; width: 1%;" src="https://icones.pro/wp-content/uploads/2021/04/icone-cercle-rempli-vert.png" alt="">
+        <div style=" position: relative; left: 50px ; top: 5px ; display: inline-grid;">
+        <h6 style="background-color: #eee; display: inline-grid; width: 80px; height: 20px ; text-align: center; border-radius: 10px; ">Estudios</h6>
+        <h6 style="background-color: #eee; display: inline-grid; width: 80px; height: 20px ; text-align: center; border-radius: 10px; ">Redes</h6>
+        </div>
+        <!--LIBROSSS-->
+        <img style="width: 8%; position: relative; left: 110px ; top: 15px; " src="https://image.isu.pub/140512182135-ff3e2e6eafd064ee05bd0988a639433e/jpg/page_1.jpg" alt="">
+        <img style="width: 8%; position: relative; left: 120px ; top: 15px;" src="https://1.bp.blogspot.com/-E6yn4Ii2AOw/WMy_VTaNxGI/AAAAAAAAYUQ/KZ2dr-Cx2hsfXYu02KjM51QAYcum7vmGwCLcB/s1600/Redes%2BAdministraci%25C3%25B3n%2Bde%2Bservidores%2B%25E2%2580%2593%2BUSERS-FREELIBROS.jpg" alt="">
+
+
+        <div style=" display: inline-grid ;text-align: left; position: relative; top: 40px; right: 275px;">
+        <h6 style="font-size: 12px;">Maria de los <br> Angeles Laces</h6> 
+        </div>
+        <button id="btnMic" type="button"  onclick="cambiarBoton(this)" style=" width: 40px ; border: solid 0.1px; border-radius: 30px; position: relative; left: 144px;" class="btn btn-light"><i class="bi-mic-fill"></i></button>
+        <button type="button" style=" width: 40px ; border: solid 0.1px; border-radius: 30px; position: relative; left: 144px;" class="btn btn-light"><i class="bi-camera-video-fill"></i> </button>
+        <button type="button" style="border: solid 0.1px; border-radius: 30px; position: relative; left: 162px;" class="btn btn-light"><i class="bi-plus-circle-fill"></i> Unirse</button>
+        
+        <hr style="position: relative; top: 10px;">
+        <img style="width: 5%; height: 40px ; border-radius: 50px; position: relative; top: 5px ;" src="https://lh3.googleusercontent.com/a-/AOh14GjcO9Ug3St_2I__PCa2mFdu0-_7b5-0Fz0pZm275A=s75-c" alt="">
+        <img style="width: 1%; position: relative; top: 5px  ;" src="https://icones.pro/wp-content/uploads/2021/04/icone-cercle-rempli-vert.png" alt="">
+        <div style=" position: relative; left: 50px ; bottom: 9px ; display: inline-grid;">
+        <h6 style="background-color: #eee; display: inline-grid; width: 80px; height: 20px ; text-align: center; border-radius: 10px;">Estudios</h6>
+        <h6 style="background-color: #eee; display: inline-grid; width: 80px; height: 41px ; text-align: center; border-radius: 10px;">Ing. Software</h6>
+        </div>
+        <img style="width: 8%; height: 90px ; position: relative; left: 110px ; top: 15px; " src="https://3.bp.blogspot.com/-drpaX_hOgUA/WXqFbiDpWdI/AAAAAAAAAq4/WlpnKYtQgYk_KUzxCwKmsf53_Ci2D8BTwCLcBGAs/s1600/introduccion-a-la-ingenieria-de-software-utp-freelibros.me.jpg" alt="">
+        <img style="width: 8%; height: 90px  ;position: relative; left: 110px ; top: 15px; " src="https://www.elsotano.com/imagenes_grandes/9786071/978607150314.JPG" alt="">
+        <img style="width: 8%; height: 90px ;position: relative; left: 110px ; top: 15px; " src="https://tienda.aenor.com/Publicaciones_Libros/Cubiertas/9788417891619.jpg" alt="">
+        <div style=" text-align: center; display: inline-grid; position: relative; top: 45px; right: 340px;">
+        <h6 style="font-size: 12px;">Maria de los <br> Angeles Laces</h6>
+      </div>
+      <button id="btnMic" type="button" onclick="" style=" width: 40px ; border: solid 0.1px; border-radius: 30px; position: relative; left: 80px;" class="btn btn-light"><i class="bi-mic-fill"></i> </button>
+        <button type="button" style=" width: 40px ; border: solid 0.1px; border-radius: 30px; position: relative; left: 80px;" class="btn btn-light"><i class="bi-camera-video-fill"></i> </button>
+        <button type="button" style="border: solid 0.1px; border-radius: 30px; position: relative; left: 100px;" class="btn btn-light"><i class="bi-plus-circle-fill"></i> Unirse</button>
+      
+      
+        <hr>
+        <img style="position: relative; bottom: 15px; width: 5%; height: 40px ; border-radius: 50px ;" src="https://lh3.googleusercontent.com/a-/AOh14Gh4IQIwqh1FzTlYzj58uT1hRyg85kI1YE7v6xrl=s0" alt="">
+        <img style="position: relative; bottom: 15px; width: 1%;" src="https://icones.pro/wp-content/uploads/2021/04/icone-cercle-rempli-vert.png" alt="">
+        
+        <div style=" position: relative; left: 50px ; bottom: 8px ; display: inline-grid;">
+        <h6 style="background-color: #eee; display: inline-grid; width: 80px; height: 20px ; text-align: center; border-radius: 10px;">Estudios</h6>
+        <h6 style="background-color: #eee; display: inline-grid; width: 80px; height: 41px ; text-align: center; border-radius: 10px;">Base de datos</h6> 
+        </div>
+        <img style="width: 8%; height: 90px ;position: relative; left: 110px ; bottom: 1px; " src="https://image.isu.pub/120420153237-7d55a6c58a614d0484aa97db94abc4cf/jpg/page_1.jpg" alt="">
+        <img style="width: 8%; height: 90px; position: relative; left: 120px ; bottom: 1px; " src="https://images-na.ssl-images-amazon.com/images/I/81EV7oBNmYL.jpg" alt="">
+        <div style=" position: relative; right: 270px ; top: 25px ; display: inline-grid;">
+        <h6 style="font-size: 14px; text-align: justify; text-justify: inter-word;">Gustavo <br>Viera</h6>
+        
+      </div>
+        <button id="btnMic" type="button" onclick="" style=" width: 40px ; border: solid 0.1px; border-radius: 30px; position: relative; left: 170px;" class="btn btn-light"><i class="bi-mic-fill"></i> </button>
+        <button type="button" style=" width: 40px ; border: solid 0.1px; border-radius: 30px; position: relative; left: 170px;" class="btn btn-light"><i class="bi-camera-video-fill"></i> </button>
+        <button type="button" style="border: solid 0.1px; border-radius: 30px; position: relative; left: 192px;" class="btn btn-light"><i class="bi-plus-circle-fill"></i> Unirse</button>
+       
+        <hr style="position: relative; bottom: 15px ;">
+        <img style=" position: relative; bottom: 25px ; width: 5%; height: 40px ; border-radius: 50px ;" src="https://lh3.googleusercontent.com/a-/AOh14GimseXbMuWREx_SDhkLjxbeox5nI9yMTxVIAEWZ=s75-c" alt="">
+        <img style=" position: relative; bottom: 25px ; width: 1%;" src="https://icones.pro/wp-content/uploads/2021/04/icone-cercle-rempli-vert.png" alt="">
+        <div style=" position: relative; left: 50px ; bottom: 20px ; display: inline-grid;">
+        <h6 style="background-color: #eee; width: 80px; height: 20px ; text-align: center; border-radius: 10px;">Estudios</h6>
+        <h6 style="background-color: #eee; width: 100px; height: 20px ; text-align: center; border-radius: 10px;">Ensamblador</h6>
+        </div>
+        <img style="width: 8%; height: 90px ;position: relative; left: 90px ; bottom: 8px; " src="https://www.elsotano.com/imagenes_grandes/9786123/978612304331.JPG" alt="">
+        <img style="width: 8%; height: 90px ;position: relative; left: 100px ; bottom: 8px; " src="https://images-na.ssl-images-amazon.com/images/I/81z-z2hhOKL.jpg" alt="">
+
+        <div style=" position: relative; right: 295px; top: 10px ; display: inline-grid;">
+        <h6 style="font-size: 12px; text-align: justify; text-justify: inter-word;">Jose Martin<br>Villalobos</h6>
+        </div>
+        
+        <button id="btnMic" type="button" onclick="" style=" width: 40px ; border: solid 0.1px; border-radius: 30px; position: relative; left: 144px;" class="btn btn-light"><i class="bi-mic-fill"></i> </button>
+        <button type="button" style=" width: 40px ; border: solid 0.1px; border-radius: 30px; position: relative; left: 144px;" class="btn btn-light"><i class="bi-camera-video-fill"></i> </button>
+        <button type="button" style="border: solid 0.1px; border-radius: 30px; position: relative; left: 162px;" class="btn btn-light"><i class="bi-plus-circle-fill"></i> Unirse</button>
+      </div>
+    
+    </div>
+  </div>
+  <script>
+    function click(){
+      let boton = document.getElementById("btnMic").innerHTML="xD";
+
+    }
+  </script>
+
+  <style>
+
+    
+    
+
+@keyframes transitionIn{
+    from {
+      opacity: 0;
+        bottom: 0.2px;    
+    }
+    
+    to {
+        opacity: 1;
+        
+    }
+}
+#cardEstudios{
+    animation: transitionIn 0.75s;
+    }
+
+#cartaEstilo{
+    animation: transitionIn 0.75s;
+    }
+  </style>
 
   </main>
-
+  
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
