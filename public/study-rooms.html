@@ -7,6 +7,7 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
 
+
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
   <link href="https://fonts.gstatic.com" rel="preconnect">
@@ -197,12 +198,12 @@
     </script>
     <!-- COLOCAR TARJETAS DE VIDEO y/O Libros-->
     <section class="section">
-      <div class="card" style="width: 18rem; border-radius: 20px; ">
+      <div id="cartaEstilo" class="card" style="box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px; border-radius: 10px ; width: 18rem; border-radius: 20px; position: relative; top: 40px;">
         <br>
         <input id=idBtnLibre type="button" value="Libre~" style=" font-size: 12px ;width: 60px; height: 25px; position: relative; left: 25px; top: 20px; border-radius: 10px; border: 0px;">
         <input type="button" value="Compacto" style="font-size: 10px ;width: 60px; height: 25px; position: relative; left: 110px; bottom: 5px; border-radius: 10px; border: 0px;">
         <input type="button" value="Descubrelo" style="font-size: 9px ;width: 60px; height: 25px; position: relative; left: 195px; bottom: 30px; border-radius: 10px; border: 0px;">
-        <img style="width: 288px; height: 220px; border-radius: 5px;" src="https://pm1.narvii.com/6521/03d3f138764296fc12df4446e2038f37172527db_hq.jpg" alt="">
+        <img style="width: 282px; height: 220px; border-radius: 5px;" src="https://pm1.narvii.com/6521/03d3f138764296fc12df4446e2038f37172527db_hq.jpg" alt="">
         <div class="card-body">
           <h5 class="card-title">¡Elige tú estilo!</h5>
           <p class="card-text">Escoge, escribe y sube.</p>
@@ -211,8 +212,18 @@
       </div>
     </section>
     
+    <script>
+      let cambiarBoton = function(icon){
+        
+        icon.classList.toggle('bi-mic-mute')
+        
+      }
+
+      
+    </script>
+
     <!--TABLA DE CUARTOS DE ESTUDIO ABIERTOS-->
-    <div class="card" style="width: 50rem; border-radius: 20px; position: relative; bottom: 513px; left: 350px;">
+    <div id="cardEstudios" class="card" style=" box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px; width: 50rem; border-radius: 20px; position: relative; bottom: 513px; left: 350px;">
       <label style="text-align: center; position: relative; top: 20px;">¡Unete a una sala de estudio!</label>
       
       
@@ -233,7 +244,7 @@
         <div style=" display: inline-grid ;text-align: left; position: relative; top: 40px; right: 275px;">
         <h6 style="font-size: 12px;">Maria de los <br> Angeles Laces</h6> 
         </div>
-        <button id="btnMic" type="button" onclick="" style=" width: 40px ; border: solid 0.1px; border-radius: 30px; position: relative; left: 144px;" class="btn btn-light"><i class="bi-mic-fill"></i> </button>
+        <button id="btnMic" type="button"  onclick="cambiarBoton(this)" style=" width: 40px ; border: solid 0.1px; border-radius: 30px; position: relative; left: 144px;" class="btn btn-light"><i class="bi-mic-fill"></i></button>
         <button type="button" style=" width: 40px ; border: solid 0.1px; border-radius: 30px; position: relative; left: 144px;" class="btn btn-light"><i class="bi-camera-video-fill"></i> </button>
         <button type="button" style="border: solid 0.1px; border-radius: 30px; position: relative; left: 162px;" class="btn btn-light"><i class="bi-plus-circle-fill"></i> Unirse</button>
         
@@ -300,6 +311,31 @@
 
     }
   </script>
+
+  <style>
+
+    
+    
+
+@keyframes transitionIn{
+    from {
+      opacity: 0;
+        bottom: 0.2px;    
+    }
+    
+    to {
+        opacity: 1;
+        
+    }
+}
+#cardEstudios{
+    animation: transitionIn 0.75s;
+    }
+
+#cartaEstilo{
+    animation: transitionIn 0.75s;
+    }
+  </style>
 
   </main>
   
