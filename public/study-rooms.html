@@ -163,13 +163,6 @@
       </li>
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="forums.html">
-          <i class="bi bi-info-square"></i>
-          <span>Foros de discusión </span>
-        </a>
-      </li>
-
-      <li class="nav-item">
         <a class="nav-link collapsed" href="registrations.html">
           <i class="bi bi-card-list"></i>
           <span>Inscripciones</span>
@@ -213,42 +206,13 @@
       </nav>
     </div>
 
-
-    <script>
-
-    </script>
-    <!-- COLOCAR TARJETAS DE VIDEO y/O Libros-->
     <section class="section">
-      <div id="cartaEstilo" class="card" style="box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px; border-radius: 10px ; width: 18rem; border-radius: 20px; position: relative; top: 40px;">
-        <br>
-        <input id=idBtnLibre type="button" value="Libre~" style=" font-size: 12px ;width: 60px; height: 25px; position: relative; left: 25px; top: 20px; border-radius: 10px; border: 0px;">
-        <input type="button" value="Compacto" style="font-size: 10px ;width: 60px; height: 25px; position: relative; left: 110px; bottom: 5px; border-radius: 10px; border: 0px;">
-        <input type="button" value="Descubrelo" style="font-size: 9px ;width: 60px; height: 25px; position: relative; left: 195px; bottom: 30px; border-radius: 10px; border: 0px;">
-        <img style="width: 282px; height: 220px; border-radius: 5px;" src="https://pm1.narvii.com/6521/03d3f138764296fc12df4446e2038f37172527db_hq.jpg" alt="">
-        <div class="card-body">
-          <h5 class="card-title">¡Elige tú estilo!</h5>
-          <p class="card-text">Escoge, escribe y sube.</p>
-          <a style="position: relative; left: 82px;" href="#" class="btn btn-primary">Aceptar</a>
-        </div>
-      </div>
-    </section>
-    
-    <script>
-      let cambiarBoton = function(icon){
-        
-        icon.classList.toggle('bi-mic-mute')
-        
-      }
-
-      
-    </script>
-
     <!--TABLA DE CUARTOS DE ESTUDIO ABIERTOS-->
-    <div id="cardEstudios" class="card" style=" box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px; width: 50rem; border-radius: 20px; position: relative; bottom: 513px; left: 350px;">
-      <label style="text-align: center; position: relative; top: 20px;">¡Unete a una sala de estudio!</label>
+    <div id="cardEstudios" class="card" style=" box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px; border-radius: 20px;">
+        <label style="text-align: center; position: relative; top: 20px;">¡Unete a una sala de estudio!</label>
       
       
-      <hr style="position: relative; top: 15px ;">
+        <hr style="position: relative; top: 15px ;">
         <div class="card-body">
 
         <img style="position: relative; top: 2px; width: 5%; border-radius: 50px ;" src="https://lh3.googleusercontent.com/a-/AOh14GjcO9Ug3St_2I__PCa2mFdu0-_7b5-0Fz0pZm275A=s75-c" alt="">
@@ -325,12 +289,20 @@
       </div>
     
     </div>
-  </div>
-  <script>
-    function click(){
-      let boton = document.getElementById("btnMic").innerHTML="xD";
 
-    }
+    </section>
+    
+    <script>
+      let cambiarBoton = function(icon){ icon.classList.toggle('bi-mic-mute') }
+      function click(){
+        let boton = document.getElementById("btnMic").innerHTML="xD";
+      }
+    </script>
+    
+  </div>
+  
+  <script>
+
   </script>
 
   <style>
