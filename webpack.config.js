@@ -60,6 +60,6 @@ module.exports = {
     resolve: { extensions: ['.tsx', '.ts', '.js', '.jsx', '.css','.sass','.less'] },
     output: {
         filename: 'login_build.js',
-        path: path.resolve(__dirname, 'build', 'prod')
+        path: path.resolve(__dirname, 'dist', 'prod')
     }
 }

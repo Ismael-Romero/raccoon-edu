@@ -7,7 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode production",
     "dev": "webpack --mode development --config webpack.config.js --watch",
-    "start": "electron ."
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
   },
   "repository": {
     "type": "git",
@@ -21,7 +23,6 @@
   "homepage": "https://github.com/Ismael-Romero/raccoon-edu#readme",
   "dependencies": {
     "axios": "^0.27.2",
-    "electron": "^18.2.4",
     "react": "^18.1.0",
     "react-dom": "^18.1.0"
   },
@@ -31,6 +32,8 @@
     "@babel/preset-react": "^7.17.12",
     "babel-loader": "^8.2.5",
     "css-loader": "^6.7.1",
+    "electron": "^19.0.1",
+    "electron-builder": "^23.0.3",
     "electron-reload": "^2.0.0-alpha.1",
     "file-loader": "^6.2.0",
     "less-loader": "^11.0.0",
@@ -41,5 +44,32 @@
     "typescript": "^4.6.4",
     "webpack": "^5.72.1",
     "webpack-cli": "^4.9.2"
+  },
+  "build": {
+    "appId": "raccoon-edu",
+    "dmg": {
+      "contents": [
+        {
+          "x": 110,
+          "y": 150
+        },
+        {
+          "x": 240,
+          "y": 150,
+          "type": "link",
+          "path": "/Aplications"
+        }
+      ]
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ]
+    },
+    "win": {
+      "target": "NSIS",
+      "icon": "dist/logo.ico"
+    }
   }
 }
