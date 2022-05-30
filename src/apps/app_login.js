@@ -34,7 +34,7 @@ const App = () => {
                         onChange={ev => setPassword(ev.target.value)}
                 />
             </div>
-            <button type="submit" className="btn btn-theme">Iniciar sesión</button>
+            <button type="submit" className="btn btn-theme" ><a Style="color: white; text-decoration: none;" href="./index.html">Iniciar sesión</a></button>
         </form>     
     );
 }

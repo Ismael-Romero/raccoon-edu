@@ -19,7 +19,7 @@ function createWindow(){
         }
     });
 
-    win.loadFile('./public/index.html');
+    win.loadFile('./public/login.html');
 
     //open the DevTools
     //win.webContents.openDevTools();
