@@ -213,27 +213,44 @@
       <div class="container">
         <div class="row">
           <div class="col-sm">
-            <div class="card animate__animated animate__fadeInUp">
+            <div id="carta1" class="card animate__animated animate__fadeInUp">
               <div class="card-body">
                 <h5 class="card-title">Base de datos</h5>
+                <img style="border-radius: 50px; width: 50px;" src="https://lh3.googleusercontent.com/a-/AOh14Gh4IQIwqh1FzTlYzj58uT1hRyg85kI1YE7v6xrl=s75-c" alt="">
+                <p class="card-text">Gustavo Viera</p>
                 <p class="card-text">With supporti text below as a natural lead-in to additional content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <a data-toggle="collapse" onclick="ocultar()" id="btn1" href="#" class="btn btn-primary">Mostrar</a>
               </div>
             </div>
           </div>
+          
+          
           <div class="col-sm">
-            <div class="card animate__animated animate__fadeInUp">
+            <div id="carta2" class="card animate__animated animate__fadeInUp">
               <div class="card-body">
                 <h5 class="card-title">Lenguajes de Interfaz</h5>
+                <img style="border-radius: 50px; width: 50px ;" src="https://lh3.googleusercontent.com/a-/AOh14GimseXbMuWREx_SDhkLjxbeox5nI9yMTxVIAEWZ=s75-c" alt="">
+                <p class="card-text">Jose Martin Villabos</p>
                 <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <a class="btn btn-primary" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                  Link with href
+                </a>
+                <div class="collapse" id="collapseExample">
+                  <div class="well">
+                    ...
+                  </div>
+                </div>
               </div>
             </div>
           </div>
+          
+          
           <div class="col-sm">
-            <div class="card animate__animated animate__fadeInUp">
+            <div id="carta3" class="card animate__animated animate__fadeInUp">
               <div class="card-body">
                 <h5 class="card-title">Ingenieria de software</h5>
+                <img style="border-radius: 50px; width: 50px;" src="https://lh3.googleusercontent.com/a-/AOh14GjcO9Ug3St_2I__PCa2mFdu0-_7b5-0Fz0pZm275A=s75-c" alt="">
+                <p class="card-text">Maria de los Angeles Laces</p>
                 <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                 <a href="#" class="btn btn-primary">Go somewhere</a>
               </div>
@@ -242,27 +259,33 @@
         </div>
         <div class="row">
           <div class="col-sm">
-            <div class="card animate__animated animate__fadeInUp">
+            <div id="carta4" class="card animate__animated animate__fadeInUp">
               <div class="card-body">
                 <h5 class="card-title">Redes de computadora</h5>
+                <img style="border-radius: 50px; width: 50px;" src="https://lh3.googleusercontent.com/a-/AOh14GjcO9Ug3St_2I__PCa2mFdu0-_7b5-0Fz0pZm275A=s75-c" alt="">
+                <p class="card-text">Maria de los Angeles Laces</p>
                 <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                 <a href="#" class="btn btn-primary">Go somewhere</a>
               </div>
             </div>
           </div>
           <div class="col-sm">
-            <div class="card animate__animated animate__fadeInUp">
+            <div id="carta5" class="card animate__animated animate__fadeInUp">
               <div class="card-body">
                 <h5 class="card-title">Taller de sistemas operativos</h5>
+                <img style="border-radius: 50px; width: 50px;" src="https://scontent.fgdl5-4.fna.fbcdn.net/v/t1.18169-9/418412_371687139512258_497979055_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=S_SASEab5ZUAX__Eyyc&tn=uVdApsk8gK76izeG&_nc_ht=scontent.fgdl5-4.fna&oh=00_AT94H5fmEmhUuGo9RqU8MeLo0BpfHG6FOcJUWceJtrEm1Q&oe=62BCDFEF" alt="">
+                <p class="card-text">Miguel Lemus</p>
                 <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                 <a href="#" class="btn btn-primary">Go somewhere</a>
               </div>
             </div>
           </div>
           <div class="col-sm">
-            <div class="card animate__animated animate__fadeInUp">
+            <div id="carta6" class="card animate__animated animate__fadeInUp">
               <div class="card-body">
                 <h5 class="card-title">Ingles</h5>
+                <img style="border-radius: 50px; width: 50px;" src="https://scontent.fgdl5-4.fna.fbcdn.net/v/t1.6435-9/201969013_3785421664917388_4685296002971763458_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=174925&_nc_ohc=eBR6-APUpCMAX-Pe21e&tn=uVdApsk8gK76izeG&_nc_ht=scontent.fgdl5-4.fna&oh=00_AT9yH_MynMstA2g5kgD4m3j6kVufpW4vs-ay6SGpxiJL-g&oe=62BE92EF" alt="">
+                <p class="card-text">Juan Carlos Lizarraga Grave</p>
                 <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                 <a href="#" class="btn btn-primary">Go somewhere</a>
               </div>
@@ -272,15 +295,21 @@
     </section>
     
     <script>
-      let cambiarBoton = function(icon){ icon.classList.toggle('bi-mic-mute') }
-      function click(){
-        let boton = document.getElementById("btnMic").innerHTML="xD";
-      }
+
+      
     </script>
     
   </div>
   
   <script>
+    function ocultar(){
+      document.getElementById('carta2').style.display='none';
+      document.getElementById('carta3').style.display='none';
+      document.getElementById('carta4').style.display='none';
+      document.getElementById('carta5').style.display='none';
+      document.getElementById('carta6').style.display='none';
+
+    }
 
   </script>
 
