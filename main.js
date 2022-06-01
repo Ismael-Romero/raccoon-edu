@@ -1,10 +1,15 @@
-const { app, BrowserWindow} = require('electron');
+const { app, BrowserWindow, ipcMain } = require('electron');
 const path = require('path');
 
 const isDev = !app.isPackaged;
 
-function createWindow(){
-    const win = new BrowserWindow({
+let winStudent;
+let winLogin;
+let winTeacher;
+
+//Window dashboard student
+function createWindowStudent(){
+    winStudent = new BrowserWindow({
         width: 1080,
         height: 760,
         minWidth: 450,
@@ -19,20 +24,74 @@ function createWindow(){
         }
     });
 
-    win.loadFile('./public/login.html');
-
-    //open the DevTools
-    //win.webContents.openDevTools();
+    winStudent.loadFile('./public/students.html');
 }
 
-app.whenReady().then(()=>{
-    createWindow();
+//Window dashboard teachers
+function createWindowTeacher(){
+    winTeacher = new BrowserWindow({
+        width: 1080,
+        height: 760,
+        minWidth: 450,
+        minHeight: 600,
+        autoHideMenuBar: true,
+        webPreferences:{
+            nodeIntegration: false,
+            nodeIntegrationWorker: true,
+            worldSafeExecuteJavaScript: true,
+            contextIsolation: true,
+            webviewTag: true
+        }
+    });
 
+    winTeacher.loadFile('./public/teachers.html');
+}
+
+//Window Login
+function createWindowLogin(){
+    winLogin = new BrowserWindow({
+        width: 1080,
+        height: 760,
+        minWidth: 450,
+        minHeight: 600,
+        autoHideMenuBar: true,
+        webPreferences:{
+            nodeIntegration: false,
+            nodeIntegrationWorker: true,
+            worldSafeExecuteJavaScript: true,
+            contextIsolation: true,
+            webviewTag: true,
+            preload: path.join(__dirname, 'preload.js')
+        }
+    });
+
+    winLogin.loadFile('./public/login.html');
+}
+
+app.whenReady().then(() => {
+    createWindowLogin();
     app.on('activate', () => {
-        if (BrowserWindow.getAllWindows().length === 0) createWindow();
+        if (BrowserWindow.getAllWindows().length === 0) createWindowLogin();
     });
 });
 
+//Listen login
+ipcMain.handle('login', (event, rol) => {
+    if (rol === "3"){
+        createWindowStudent();
+        winStudent.show();
+        winLogin.close();
+
+    } else if (rol === "2"){
+        createWindowTeacher();
+        winTeacher.show();
+        winLogin.close();
+
+    }
+});
+
+
+//Reload main.js
 if (isDev){
     require('electron-reload')(__dirname, () => {
         electron: path.join(__dirname, 'node_modules', 'bin', 'electron');

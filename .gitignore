@@ -1,9 +1,9 @@
 /node_modules
 /documentation
-/build/dev
 /dist/win-unpacked
 /dist/builder-debug.yml
 /dist/builder-effective-config.yaml
 /dist/latest.yml
 /dist/logo.ico
 /dist/raccoon-edu Setup 1.0.0.exe.blockmap
+/public/respaldo
