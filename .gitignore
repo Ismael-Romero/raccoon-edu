@@ -1,6 +1,5 @@
 /node_modules
 /documentation
-/build/dev
 /dist/win-unpacked
 /dist/builder-debug.yml
 /dist/builder-effective-config.yaml

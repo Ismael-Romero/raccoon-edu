@@ -1,7 +1,13 @@
 const path = require('path')
 
+const myEntrys = ['login.js','student.js','teacher.js'];
+const myFileNames = ['login_build.js', 'student_build.js', 'teacher_build.js'];
+
+const myEntry = myEntrys[1];
+const myFileName = myFileNames[1];
+
 module.exports = {
-    entry: './src/login.js',
+    entry: `./src/${myEntry}`,
     devtool: 'inline-source-map',
     target: 'electron-renderer',
     module: {
@@ -59,7 +65,7 @@ module.exports = {
     },
     resolve: { extensions: ['.tsx', '.ts', '.js', '.jsx', '.css','.sass','.less'] },
     output: {
-        filename: 'login_build.js',
+        filename: myFileName,
         path: path.resolve(__dirname, 'build', 'dev')
     }
 }
