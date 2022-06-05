@@ -4,11 +4,11 @@ import ReactDom from "react-dom/client";
 const Aside = () => {
     
     const items = [
-        {id: "itemMyClass", text: "Mis clases"},
-        {id: "itemStudyRoom", text: "Salas de estudio"},
-        {id: "itemReg", text: "Inscripciones"},
+        // {id: "itemMyClass", text: "Mis clases"},
+        // {id: "itemStudyRoom", text: "Salas de estudio"},
+        // {id: "itemReg", text: "Inscripciones"},
         {id: "itemMyTask", text: "Mis tareas"},
-        {id: "itemBooks", text: "Biblioteca"},
+        // {id: "itemBooks", text: "Biblioteca"},
 
     ];
 
