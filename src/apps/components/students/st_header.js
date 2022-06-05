@@ -16,7 +16,7 @@ const Header = () => {
             <nav className="header-nav ms-auto">
                 <ul className="d-flex align-items-center">
                     <li className="nav-item dropdown">
-                        <Notifications />
+                        {/* <Notifications /> */}
                     </li>
                     <li className="nav-item dropdown pe-3">
                         <Profile />

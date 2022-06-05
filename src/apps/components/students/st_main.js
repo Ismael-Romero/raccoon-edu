@@ -1,5 +1,6 @@
 import React from "react";
-import ReactDom from "react-dom/client";
+
+import StTasks from "./myTasks/st_tasks";
 
 const Main = () => {
     return (
@@ -16,7 +17,7 @@ const Main = () => {
 
             <div className="section dashboard">
                 <div className="row">
-
+                    <StTasks student="190116389"/>
                 </div>
             </div>
         </main>

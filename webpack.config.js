@@ -3,8 +3,8 @@ const path = require('path')
 const myEntrys = ['login.js','student.js','teacher.js'];
 const myFileNames = ['login_build.js', 'student_build.js', 'teacher_build.js'];
 
-const myEntry = myEntrys[2];
-const myFileName = myFileNames[2];
+const myEntry = myEntrys[1];
+const myFileName = myFileNames[1];
 
 module.exports = {
     entry: `./src/${myEntry}`,
