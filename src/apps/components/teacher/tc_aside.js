@@ -5,7 +5,7 @@ const Aside = () => {
 
     const items = [
         {id: "itemTask", text: "Crear tarea"},
-        {id: "itemClass", text: "Programar clase"},
+        // {id: "itemScore", text: "Calificar tareas"},
         ];
 
     const hiddenComponent = (name) => {
@@ -16,8 +16,8 @@ const Aside = () => {
             case "itemTask":
                 showComponent([0,1,0,0], "Crear tarea");
                 break;  
-            case "itemClass":
-                showComponent([0,0,1,0], "Programar una clase");
+            case "itemScore":
+                showComponent([0,0,1,0], "Calificar tareas");
                 break;  
                 
             default: null;
@@ -27,7 +27,7 @@ const Aside = () => {
     const showComponent = (status, directory) => {
         document.getElementById('dash').style.display = (status[0]) ? "block" : "none";
         document.getElementById('addTask').style.display = (status[1]) ? "block" : "none";
-        document.getElementById('newMeet').style.display = (status[2]) ? "block" : "none";
+        document.getElementById('Score').style.display = (status[2]) ? "block" : "none";
         document.getElementById('pageTitle').textContent = directory;
         document.getElementById('directory').textContent = directory;
 

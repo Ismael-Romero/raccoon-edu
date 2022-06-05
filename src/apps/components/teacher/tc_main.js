@@ -27,8 +27,8 @@ const Main = () => {
                     <TableTasks teach="000000000" />
                 </div>
 
-                <div className="row" id="newMeet" style={{display: "none"}}>
-                    Soy Videollamada
+                <div className="row" id="Score" style={{display: "none"}}>
+
                 </div>
 
                 <div className="row" id="myStudents" style={{display: "none"}}>
